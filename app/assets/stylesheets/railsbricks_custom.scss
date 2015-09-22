@@ -1,4 +1,91 @@
-//***********************************************************
+.nav navbar-nav {
+  text-align: right;
+} 
+
+
+#index-first-section {
+  padding-bottom: 100px;
+  /*background-image: url('C:/Sites/th_index/app/assets/images/IMG_20150819_085551266.jpg');
+  background-position: center center;
+  background-size: cover;*/
+  background-color: lightgray;
+  border-bottom: 1px solid black;
+
+}
+
+
+#homepage-headline {
+  text-align: center;
+  font-size: 5em;
+  margin-top: 40px;
+}
+
+#homepage-search-form {
+  margin-top: 80px;
+  text-align: center;
+}
+
+#homepage-search-field {
+  margin-right: 50px;
+
+}
+
+#homepage-arrow {
+margin-right: 50px;
+
+}
+
+#index-second-section {
+ padding-bottom: 50px;
+ border-bottom: 1px solid black;
+
+}
+
+#index-second-section h2{
+
+  text-align: center;
+}
+
+.map-preview {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.map-preview h4 {
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+#index-third-section {
+  padding-bottom: 100px;
+}
+
+.recently-answered {
+  margin-top: 10px;
+  border: 1px solid black;
+}
+
+.map-holder {
+  z-index: 1;
+  height: 90vh;
+}
+
+.trip-builder {
+  border-right: 1px solid black;
+  z-index: 99;
+  height: 90vh;
+}
+
+.total-cost {
+  border-top: 1px solid black;
+}
+
+.total-cost p{
+padding-top: 10px;
+
+}
+
+
 // BOOTSTRAP VARIABLES OVERRIDES
 
 // Color system
@@ -27,7 +114,7 @@ $headings-font-family: $font-family-base;
 $headings-font-weight: 700;
 $headings-color: inherit;
 
-// Code blocks
+//Code blocks
 $code-color: #c7254e;
 $code-bg: #f9f2f4;
 $pre-color: #373737;
@@ -128,7 +215,7 @@ $alert-info-border: $state-info-border;
 
 // Navbar: Base styles
 $navbar-height: 50px;
-$navbar-margin-bottom: 4px;
+$navbar-margin-bottom: 0px;
 $navbar-padding-horizontal: 15px;
 $navbar-padding-vertical: 13px;
 $navbar-border-radius: 0px;
@@ -560,3 +647,5 @@ img {
   }
 }
 //***********************************************************
+
+

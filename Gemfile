@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.2.3'
+ruby '2.1.5'
 
 # Standard Rails gems
 gem 'rails', '4.2.4'
@@ -45,8 +45,12 @@ end
 
 
 # SQLite 3
-group :development, :test do
-  gem 'sqlite3', '1.3.10'
+group :development do
+  gem 'sqlite3'
+end
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
 end
 
 # Devise: https://github.com/plataformatec/devise
