@@ -1,5 +1,6 @@
 ThIndex::Application.routes.draw do
 
+
   root "pages#home"
   match ':controller(/:action(/:id))', :via => [:get, :post]
   get "home", to: "pages#home", as: "home"

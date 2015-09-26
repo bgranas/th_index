@@ -14,8 +14,8 @@
 
 <li><%= link_to "Sign out", destroy_user_session_path, data:{method: :delete} %></li>
 <% end %>
-
+<li><%= link_to("My Profile", {:controller => 'profile', :action => 'index'}) %></li>
 <li><%= link_to("Map", {:controller => 'map', :action => 'index'}) %></li>
-<li><%= link_to "Community" %></li>
+<li><%= link_to("Community", {:controller => 'community', :action => 'index'}) %></li>
 <li><%= link_to "How it works" %></li>
 <li><%= link_to "About us" %></li>

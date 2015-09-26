@@ -3,28 +3,40 @@
 <div  id="index-first-section">
 	<div class="container-fluid">
 		<h1 id="homepage-headline">Plan your dream trip now</h1>
-		<div class="row">
-			<div class="col-md-12">
-				<form id="homepage-search-form" class="form-inline">
-				  <div id="homepage-search-field" class="form-group">
-				    <label class="sr-only" for="Location0">Starting Location</label>
-				    <input class="form-control" id="Location0">
-				  </div>
-				  <span id="homepage-arrow" class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
-				  <div id="homepage-search-field" class="form-group">
-				    <label class="sr-only" for="Location1">First Destination</label>
-				    <input class="form-control" id="Location1">
-				  </div>
-				  <%= link_to("Let's Go", {:controller => 'map', :action => 'index'}, :class => 'btn btn-success') %>
-				</form>
+			<div class="row">
+				<div class="col-md-12">
+					<form class="form-inline homepage-search-form">
+					  <div class="form-group homepage-search-field">
+					    <label class="sr-only" for="Location0">Starting Location</label>
+					    <input class="form-control" id="Location0" placeholder="Starting Location">
+					  </div>
+					  <span id="homepage-arrow" class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+					  <div class="form-group homepage-search-field">
+					    <label class="sr-only" for="Location1">First Destination</label>
+					    <input class="form-control" id="Location1" placeholder="First Destination">
+					  </div>
+					  <%= link_to("Let's Go", {:controller => 'map', :action => 'index'}, :class => 'btn btn-success') %>
+					</form>
+				</div>
+				<div class="col-md-12">
+					<h2 id="homepage-subheadline">Or discover amazing destinations near your current location</h2>
+				</div>
+				<div class="col-md-12">
+					<form class="form-inline homepage-search-form">
+						<div class="form-group homepage-search-field">
+						    <label class="sr-only" for="current-location">Current Location</label>
+						    <input class="form-control" id="current-Location" placeholder="Autocomplete current destination">
+						</div>
+					<%= link_to("Let's Go", {:controller => 'map', :action => 'index'}, :class => 'btn btn-success') %>
+					</form>
+				</div>
 			</div>
-		</div>
 	</div>
 </div>
 
 <div  id="index-second-section">
 	<div class="container-fluid">
-		<h2>Create your own trip now </br>or get inspiration from our community created trips</h2>
+		<h2>Start building your own trip now</br>or get inspiration from our community created trips</h2>
 		<ul class="nav nav-tabs" role="tablist">
 	    <li role="presentation" class="active"><a href="#" aria-controls="home" role="tab" data-toggle="tab">Popular</a></li>
 	    <li role="presentation"><a href="#" aria-controls="profile" role="tab" data-toggle="tab">Asia</a></li>
@@ -34,57 +46,78 @@
 	    <li role="presentation"><a href="#" aria-controls="profile" role="tab" data-toggle="tab">India</a></li>
 	  </ul>
 		<div class="map-preview row">
-			<div class="col-md-3">
+			<div class="col-md-3 col-sm-6">
 				<h4>Vietnam North to South</h4>
-				<div class="map-preview"><iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d7859612.345961416!2d101.99168447970445!3d15.872286747926669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2zSGFub2ksIEhvw6BuIEtp4bq_bSwgSGFub2ksIFZpZXRuYW0!3m2!1d21.0277644!2d105.8341598!4m5!1s0x317529292e8d3dd1%3A0xf15f5aad773c112b!2sHo+Chi+Minh+City%2C+Ho+Chi+Minh%2C+Vietnam!3m2!1d10.8230989!2d106.62966379999999!5e0!3m2!1sen!2skh!4v1442725298453" width="275" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+				<div class="thumbnail map-holder-preview"><img src="https://www.google.com/maps/api/staticmap?size=275x300&path=weight:5|Hanoi,Vietnam|Halong,Vietnam|Hue,Vietnam|DaLat,Vietnam|HoChiMinhCity,Vietnam"></div>
 				<p><a href="#">Vietnam</a></p>
-				<a class="btn btn-primary btn-block" href="#" role="button">See more</a>
+				<p><span class="badge">10</span><a href="#"> Likes</a></p>
+				<%= link_to("See more", {:controller => 'map', :action => 'index'}, :class => 'btn btn-primary btn-block') %>
 			</div>
-			
-			<div class="col-md-3">
+			<div class="col-md-3 col-sm-6">
 				<h4>Eastern Europe</h4>
-				<div class="map-preview"><iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d7859612.345961416!2d101.99168447970445!3d15.872286747926669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2zSGFub2ksIEhvw6BuIEtp4bq_bSwgSGFub2ksIFZpZXRuYW0!3m2!1d21.0277644!2d105.8341598!4m5!1s0x317529292e8d3dd1%3A0xf15f5aad773c112b!2sHo+Chi+Minh+City%2C+Ho+Chi+Minh%2C+Vietnam!3m2!1d10.8230989!2d106.62966379999999!5e0!3m2!1sen!2skh!4v1442725298453" width="275" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div>
-				<p><a href="#">Poland, Ukraine</a></p>
-				<a class="btn btn-primary btn-block" href="#" role="button">See more</a>			
+				<div class="thumbnail map-holder-preview"><img src="https://www.google.com/maps/api/staticmap?size=275x300&path=weight:5|Warsaw,Poland|Kiev,Ukraine|Prague,CzechRepublic|Budapest,Hungary"></div>
+				<p><a href="#">Poland, Ukraine +2 others</a></p>
+				<p><span class="badge">10</span><a href="#"> Likes</a></p>
+				<%= link_to("See more", {:controller => 'map', :action => 'index'}, :class => 'btn btn-primary btn-block') %>			
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-3 col-sm-6">
 				<h4>Colombia and Ecuador</h4>
-				<div class="map-preview"><iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d7859612.345961416!2d101.99168447970445!3d15.872286747926669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2zSGFub2ksIEhvw6BuIEtp4bq_bSwgSGFub2ksIFZpZXRuYW0!3m2!1d21.0277644!2d105.8341598!4m5!1s0x317529292e8d3dd1%3A0xf15f5aad773c112b!2sHo+Chi+Minh+City%2C+Ho+Chi+Minh%2C+Vietnam!3m2!1d10.8230989!2d106.62966379999999!5e0!3m2!1sen!2skh!4v1442725298453" width="275" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+				<div class="thumbnail map-holder-preview"><img src="https://www.google.com/maps/api/staticmap?size=275x300&path=weight:5|Medellin,Colombia|Quito,Ecuador"></div>
 				<p><a href="#">Colombia, Ecuador</a></p>
-				<a class="btn btn-primary btn-block" href="#" role="button">See more</a>			
-				</div>
-			<div class="col-md-3">
-				<h4>South Africa</h4>
-				<div class="map-preview"><iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d7859612.345961416!2d101.99168447970445!3d15.872286747926669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2zSGFub2ksIEhvw6BuIEtp4bq_bSwgSGFub2ksIFZpZXRuYW0!3m2!1d21.0277644!2d105.8341598!4m5!1s0x317529292e8d3dd1%3A0xf15f5aad773c112b!2sHo+Chi+Minh+City%2C+Ho+Chi+Minh%2C+Vietnam!3m2!1d10.8230989!2d106.62966379999999!5e0!3m2!1sen!2skh!4v1442725298453" width="275" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div>
-				<p><a href="#">South Africa</a></p>
-				<a class="btn btn-primary btn-block" href="#" role="button">See more</a>			
+				<p><span class="badge">10</span><a href="#"> Likes</a></p>
+				<%= link_to("See more", {:controller => 'map', :action => 'index'}, :class => 'btn btn-primary btn-block') %>		
 			</div>
-				
+			<div class="col-md-3 col-sm-6">
+				<h4>South Africa</h4>
+				<div class="thumbnail map-holder-preview"><img src="https://www.google.com/maps/api/staticmap?size=275x300&path=weight:5|CapeTown,SouthAfrica|Durban,SouthAfrica"></div>
+				<p><a href="#">South Africa</a></p>
+				<p><span class="badge">10</span><a href="#"> Likes</a></p>
+				<%= link_to("See more", {:controller => 'map', :action => 'index'}, :class => 'btn btn-primary btn-block') %>		
+			</div>
 		</div>
 		<a class="btn btn-default" href="#" role="button">See all user created trips</a>
-
-
 	</div>
 </div>
 
 <div id="index-third-section">
 	<div class="container-fluid">
-			<h2>Looking for tips from real travelers?</br> See what our community has to say about your next destination</h2>
 			<div class="row">
-				<div class="col-md-2">
-				</div>
 				<div class="col-md-8">
-					<div class="recently-answered">
-						<p>In Asia/Vietnam/Ho Chi Minh City/Where to stay</p>
-						<p> User12345: I highly recommend the .......</p>
+					<h2>Looking for tips from real travelers?</h2> 
+					<h2>See what our community has to say about your next destination</h2>
+					<div class="media recently-answered">
+						<div class="media-left media-middle">
+							<a href="#"><img class="media-object img-thumbnail" src="../images/profilepic.jpg"></a>
+						</div>
+						<div class="media-body">
+							<ol class="media-heading breadcrumb">
+								<li><a href="#">Asia</a></li>
+								<li><a href="#">Vietnam</a></li>
+								<li><a href="#">Ho Chi Minh City</a></li>
+								<li><a href="#">Where to stay</a></li>
+							</ol>
+							<p><a href="#">User12345</a>: I highly recommend the .......</p>
+						</div>
 					</div>
-					<div class="recently-answered">
-						<p>In Europe/England/London/What to do</p>
-						<p> User6789: I really liked the museum.......</p>
+					<div class="media recently-answered">
+						<div class="media-left media-middle">
+							<a href="#"><img class="media-object img-thumbnail" src="../images/profilepic.jpg"></a>
+						</div>
+						<div class"media-body">
+							<ol class="media-heading breadcrumb">
+								<li><a href="#">Europe</a></li>
+								<li><a href="#">England</a></li>
+								<li><a href="#">London</a></li>
+								<li><a href="#">What to do</a></li>
+							</ol>
+							<p><a href="#">User6789</a>: I highly recommend the .......</p>
+						</div>
 					</div>
+					<a class="btn btn-default" href="#" role="button">See all recommendations for your next trip</a>
 				</div>
-
-				<div class="col-md-2">
+				<div class="col-md-4">
+					<h2>Check out our user submitted photos</h2>
+					<img src="../images/Coastline.jpg" class="thumbnail" style="width: 350px; height: 400px;">
 				</div>
 			</div>
 

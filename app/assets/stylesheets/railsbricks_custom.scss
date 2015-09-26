@@ -1,15 +1,26 @@
+/****************************************************
+Nav bar
+****************************************************/
+
+
 .nav navbar-nav {
   text-align: right;
 } 
 
-
+/****************************************************
+Landing page
+****************************************************/
 #index-first-section {
   padding-bottom: 100px;
-  /*background-image: url('C:/Sites/th_index/app/assets/images/IMG_20150819_085551266.jpg');
   background-position: center center;
-  background-size: cover;*/
-  background-color: lightgray;
+  background-size: cover;
+  background-image: url("../images/Coastline.jpg");
   border-bottom: 1px solid black;
+  color: white;
+
+}
+
+#homepage-search-cover {
 
 }
 
@@ -20,12 +31,17 @@
   margin-top: 40px;
 }
 
-#homepage-search-form {
+#homepage-subheadline {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.homepage-search-form {
   margin-top: 80px;
   text-align: center;
 }
 
-#homepage-search-field {
+.homepage-search-field {
   margin-right: 50px;
 
 }
@@ -46,13 +62,14 @@ margin-right: 50px;
   text-align: center;
 }
 
-.map-preview {
-  margin-top: 40px;
-  margin-bottom: 40px;
+
+.map-holder-preview {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 5px;
 }
 
 .map-preview h4 {
-  margin-bottom: 8px;
   text-align: center;
 }
 
@@ -60,20 +77,37 @@ margin-right: 50px;
   padding-bottom: 100px;
 }
 
+#index-third-section h2 {
+  text-align: center;
+}
+
 .recently-answered {
   margin-top: 10px;
   border: 1px solid black;
+  width: 700px;
+  margin: auto;
 }
 
-.map-holder {
+/****************************************************
+Map page
+****************************************************/
+
+#map-holder {
   z-index: 1;
   height: 90vh;
+  width: 100%;
 }
 
 .trip-builder {
   border-right: 1px solid black;
   z-index: 99;
   height: 90vh;
+}
+
+.add-accom {
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .total-cost {
@@ -86,7 +120,83 @@ padding-top: 10px;
 }
 
 
+
+/****************************************************
+User Profile
+****************************************************/
+
+.profile-picture {
+  margin: auto;
+  margin-top: 20px;
+}
+
+.user-stats {
+  border: 1px solid lightgray;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.user-profile-header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+
+
+/****************************************************
+Community
+****************************************************/
+
+.community-first-section {
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+#trip-of-week {
+  border-left: 1px solid black;
+  padding-left: 15px;
+}
+
+#community-callout {
+  background-position: center center;
+  background-size: cover;
+  background-image: url("../images/Coastline.jpg");
+}
+
+#community-popular-trips {
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+#community-sort {
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
 // BOOTSTRAP VARIABLES OVERRIDES
+
+// FOOTER
+#footer {
+  background-color: #222222;
+  color: #eeeeee;
+  height: 50px;
+  margin-top: -50px;
+  letter-spacing: 1px;
+
+  .footer-first-row {
+    padding-top: 20px;
+  }
+}
+
+
+
 
 // Color system
 $brand-primary: #428bca;
@@ -634,18 +744,7 @@ img {
 
 
 //***********************************************************
-// FOOTER
-#footer {
-  background-color: #222222;
-  color: #eeeeee;
-  height: 100px;
-  margin-top: -100px;
-  letter-spacing: 1px;
 
-  .footer-first-row {
-    padding-top: 20px;
-  }
-}
 //***********************************************************
 
 
