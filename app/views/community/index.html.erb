@@ -1,0 +1,97 @@
+<div class="container-fluid">
+	<div class="row  community-first-section">
+		<div class="col-md-6" id="community-callout">
+			<h1>Get inspired by our community made trips</h1>	
+		</div>
+		
+		<div class="col-md-6" id="trip-of-week">
+			<h1>Trip of the Week</h1>
+			<div class="col-md-4">
+				<img class="img-thumbnail profile-picture" src="../images/profilepic.jpg">
+				<h4>User 12345</h4>
+				<p>This trip hits my favorite places in Vietnam...</p>
+			</div>
+			<div class="col-md-8">
+					<h4>Vietnam North to South</h4>
+					<div class="thumbnail map-holder-preview"><img src="https://www.google.com/maps/api/staticmap?size=175x200&path=weight:5|Hanoi,Vietnam|Halong,Vietnam|Hue,Vietnam|DaLat,Vietnam|HoChiMinhCity,Vietnam"></div>
+					<p><a href="#">Vietnam</a></p>
+					<div class="col-sm-6">
+						<p><a href="#">Like <span class="badge">10</span></a></p>
+					</div>
+					<div class="col-sm-6">
+						<p><span class="label label-warning">Wishlist</span></p>
+					</div>
+					<a class="btn btn-primary" href="#" role="button">See more</a><a class="btn btn-default" href="#" role="button"><span class="glyphicon glyphicon-share" aria-hidden="true"></span> Share</a>
+			</div>
+		</div>
+	</div>
+	<h3>Our most popular/promoted trips</h3>
+	<div class="map-preview row" id="community-popular-trips">
+		<div class="col-md-3 col-sm-6">
+			<h4>Vietnam North to South</h4>
+			<div class="thumbnail map-holder-preview"><img src="https://www.google.com/maps/api/staticmap?size=275x300&path=weight:5|Hanoi,Vietnam|Halong,Vietnam|Hue,Vietnam|DaLat,Vietnam|HoChiMinhCity,Vietnam"></div>
+			<p><a href="#">Vietnam</a></p>
+			<p><span class="badge">10</span><a href="#"> Likes</a></p>
+			<%= link_to("See more", {:controller => 'map', :action => 'index'}, :class => 'btn btn-primary btn-block') %>
+		</div>
+		<div class="col-md-3 col-sm-6">
+			<h4>Eastern Europe</h4>
+			<div class="thumbnail map-holder-preview"><img src="https://www.google.com/maps/api/staticmap?size=275x300&path=weight:5|Warsaw,Poland|Kiev,Ukraine|Prague,CzechRepublic|Budapest,Hungary"></div>
+			<p><a href="#">Poland, Ukraine +2 others</a></p>
+			<p><span class="badge">10</span><a href="#"> Likes</a></p>
+			<%= link_to("See more", {:controller => 'map', :action => 'index'}, :class => 'btn btn-primary btn-block') %>			
+		</div>
+		<div class="col-md-3 col-sm-6">
+			<h4>Colombia and Ecuador</h4>
+			<div class="thumbnail map-holder-preview"><img src="https://www.google.com/maps/api/staticmap?size=275x300&path=weight:5|Medellin,Colombia|Quito,Ecuador"></div>
+			<p><a href="#">Colombia, Ecuador</a></p>
+			<p><span class="badge">10</span><a href="#"> Likes</a></p>
+			<%= link_to("See more", {:controller => 'map', :action => 'index'}, :class => 'btn btn-primary btn-block') %>		
+		</div>
+		<div class="col-md-3 col-sm-6">
+			<h4>South Africa</h4>
+			<div class="thumbnail map-holder-preview"><img src="https://www.google.com/maps/api/staticmap?size=275x300&path=weight:5|CapeTown,SouthAfrica|Durban,SouthAfrica"></div>
+			<p><a href="#">South Africa</a></p>
+			<p><span class="badge">10</span><a href="#"> Likes</a></p>
+			<%= link_to("See more", {:controller => 'map', :action => 'index'}, :class => 'btn btn-primary btn-block') %>		
+		</div>
+	</div>
+	<h3>Browse by region</h3>
+	<ul class="nav nav-tabs" id="community-sort" role="tablist">
+    <li role="presentation" class="active"><a href="#" aria-controls="home" role="tab" data-toggle="tab">Asia</a></li>
+    <li role="presentation"><a href="#" aria-controls="profile" role="tab" data-toggle="tab">Europe</a></li>
+    <li role="presentation"><a href="#" aria-controls="profile" role="tab" data-toggle="tab">Americas</a></li>
+    <li role="presentation"><a href="#" aria-controls="profile" role="tab" data-toggle="tab">Africa</a></li>
+    <li role="presentation"><a href="#" aria-controls="profile" role="tab" data-toggle="tab">India</a></li>
+  </ul>
+	<div class="map-preview row">
+		<div class="col-md-3 col-sm-6">
+			<h4>Vietnam North to South</h4>
+			<div class="thumbnail map-holder-preview"><img src="https://www.google.com/maps/api/staticmap?size=275x300&path=weight:5|Hanoi,Vietnam|Halong,Vietnam|Hue,Vietnam|DaLat,Vietnam|HoChiMinhCity,Vietnam"></div>
+			<p><a href="#">Vietnam</a></p>
+			<p><span class="badge">10</span><a href="#"> Likes</a></p>
+			<%= link_to("See more", {:controller => 'map', :action => 'index'}, :class => 'btn btn-primary btn-block') %>
+		</div>
+		<div class="col-md-3 col-sm-6">
+			<h4>Eastern Europe</h4>
+			<div class="thumbnail map-holder-preview"><img src="https://www.google.com/maps/api/staticmap?size=275x300&path=weight:5|Warsaw,Poland|Kiev,Ukraine|Prague,CzechRepublic|Budapest,Hungary"></div>
+			<p><a href="#">Poland, Ukraine +2 others</a></p>
+			<p><span class="badge">10</span><a href="#"> Likes</a></p>
+			<%= link_to("See more", {:controller => 'map', :action => 'index'}, :class => 'btn btn-primary btn-block') %>			
+		</div>
+		<div class="col-md-3 col-sm-6">
+			<h4>Colombia and Ecuador</h4>
+			<div class="thumbnail map-holder-preview"><img src="https://www.google.com/maps/api/staticmap?size=275x300&path=weight:5|Medellin,Colombia|Quito,Ecuador"></div>
+			<p><a href="#">Colombia, Ecuador</a></p>
+			<p><span class="badge">10</span><a href="#"> Likes</a></p>
+			<%= link_to("See more", {:controller => 'map', :action => 'index'}, :class => 'btn btn-primary btn-block') %>		
+		</div>
+		<div class="col-md-3 col-sm-6">
+			<h4>South Africa</h4>
+			<div class="thumbnail map-holder-preview"><img src="https://www.google.com/maps/api/staticmap?size=275x300&path=weight:5|CapeTown,SouthAfrica|Durban,SouthAfrica"></div>
+			<p><a href="#">South Africa</a></p>
+			<p><span class="badge">10</span><a href="#"> Likes</a></p>
+			<%= link_to("See more", {:controller => 'map', :action => 'index'}, :class => 'btn btn-primary btn-block') %>		
+		</div>
+	</div>
+</div>
