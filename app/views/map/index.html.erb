@@ -6,14 +6,30 @@
 			<form class="form-horizontal">
 				<div class="form-group">
 					<label class="sr-only" for="StartingLocation"></label>
-					<input type="text" class="form-control" placeholder="Starting Point">
-					<a class="btn btn-primary" href="#" role="button">View step by step travel options</a>
-					<input type="text" class="form-control" placeholder="First Destination">
-					<a href="#" class="add-accom">Add Accommodation in this destination<span class="label label-success" href="#" role="button">+</span></a>
-					<a class="btn btn-primary" href="#" role="button">Add Next Destination</a>
-					<div class="total-cost">
-						<p>Total cost</p>
+					<input type="text" class="form-control location-input" placeholder="Starting Point">
+					<a class="btn btn-primary transport-options" id="transport-0" href="#" role="button">View step by step transport</a>
+					<input type="text" class="form-control location-input" placeholder="First Destination">
+					<div class="row add-accom">
+						<div class="col-md-12">
+							<a href="#"><span class="label label-success" href="#" role="button">+</span>Accommodation</a>
+						</div>
 					</div>
+					<div class="row add-dest">
+						<div class="col-md-12">
+							<a class="btn btn-primary" href="#" role="button">Add Next Destination</a>						
+						</div>
+					</div>	
+					<div class="row" id="cost">
+
+						<div class="col-md-6" id="total-cost">
+							<p>Total cost</p>
+						</div>						
+						<div class="col-md-6" id="sum-price">
+							<p>$850</p>
+						</div>						
+					</div>
+
+					<%= link_to("Book this trip now", {:controller => 'booking', :action => 'index'}, :class => 'btn btn-primary') %>
 				</div>
 			</form>
 		</div>

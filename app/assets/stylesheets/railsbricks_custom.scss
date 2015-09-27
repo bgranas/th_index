@@ -99,9 +99,19 @@ Map page
 }
 
 .trip-builder {
-  border-right: 1px solid black;
+  padding-right: 0px;
   z-index: 99;
   height: 90vh;
+}
+
+.location-input {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.transport-options {
+  margin-left: 70px;
+
 }
 
 .add-accom {
@@ -110,12 +120,25 @@ Map page
   margin-bottom: 10px;
 }
 
-.total-cost {
+.add-dest {
+  margin-left: 140px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border-top: 1px solid black;
 }
 
-.total-cost p{
+#cost {
+  border-top: 1px solid black;
+  padding-top: 10px;
+}
+
+#total-cost p {
 padding-top: 10px;
+
+}
+
+#sum-price p {
+  text-align: center;
 
 }
 
@@ -174,8 +197,30 @@ Community
 }
 
 
+/****************************************************
+Destination Page
+****************************************************/
+
+.destination-content {
+  border: 1px solid black;
+  height: 400px;
+}
+
+.destination-factbox {
+  float: right;
+  border: 1px solid black;
+}
 
 
+/****************************************************
+Booking Page
+****************************************************/
+
+.booking-object {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+}
 
 
 

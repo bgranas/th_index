@@ -1,0 +1,79 @@
+<div class="container-fluid">
+	<h1>Let's book this trip</h1>
+	<div class="container-fluid">
+		<div class="row booking-object">
+				<div class="col-md-3">
+					<h4>Flight to Bangkok</h4>
+				</div>
+				<div class="col-md-3">
+					<ul class="list-unstyled transport-details">
+							<li>United Airlines</li>
+							<li>NYC to BKK</li>
+							<li>October 10  |  12:00 pm</li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<p>$800</p>
+				</div>
+				<div class="col-md-3">
+					<a class="btn btn-default" href="#" role="button">Book Now</a>
+					<p><span class="label label-warning">Booked!</span></p>
+				</div>	
+		</div>
+
+		<div class="row booking-object">
+				<div class="col-md-3">
+					<h4>Hostel in Bangkok</h4>
+					<%= link_to("Bangkok destination page", {:controller => 'destinations', :action => 'index'}, :class => 'btn btn-primary') %>		
+				</div>
+				<div class="col-md-3">
+					<ul class="list-unstyled accom-details">
+							<li>Bangkok Hostel</li>
+							<li>Check in: Oct 10 |  Check out: Oct 15</li>
+							<li>123 Main St <a href="#">Click to see directions</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<p>$30</p>
+				</div>
+				<div class="col-md-3">
+					<a class="btn btn-primary" href="#" role="button">Book Now</a>
+				</div>	
+		</div>
+
+		<div class="row booking-object">
+				<div class="col-md-3">
+					<h4>Bus to Phnom Penh</h4>
+				</div>
+				<div class="col-md-3">
+					<ul class="list-unstyled transport-details">
+							<li>Cambodia Bus Company</li>
+							<li>Bangkok to Phnom Penh</li>
+							<li>October 15  |  10:00 am</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<p>$15</p>
+				</div>
+				<div class="col-md-3">
+					<a class="btn btn-primary" href="#" role="button">Book Now</a>
+				</div>	
+		</div>
+
+		<div class="row booking-summary">
+			<div class="col-md-3">
+				<p><strong>Approximate cost for trip</strong></p>
+			</div>
+			<div class="col-md-3"></div>
+			<div class="col-md-3">
+				<p><strong>$845</strong></p>
+			</div>
+			<div class="col-md-3">
+				<a class="btn btn-primary" href="#" role="button">Email this itinerary</a>
+				<a class="btn btn-primary" href="#" role="button">Print</a>
+			</div>
+
+		</div>
+
+	</div>
+</div>
